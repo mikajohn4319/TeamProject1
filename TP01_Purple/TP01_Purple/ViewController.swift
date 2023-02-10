@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var ImageOutlet: UIImageView!
+    
+    @IBAction func GreyActionButton(_ sender: Any) {
+        
+    }
+    @IBAction func SepiaActionButton(_ sender: Any) {
+        
+    }
+    @IBAction func FlipActionButton(_ sender: Any) {
+        
+    }
 }
 
