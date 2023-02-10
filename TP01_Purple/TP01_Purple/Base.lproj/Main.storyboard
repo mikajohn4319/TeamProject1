@@ -110,6 +110,7 @@
                     </view>
                     <connections>
                         <outlet property="ImageOutlet" destination="AVM-ez-b6r" id="Csb-vb-Plh"/>
+                        <outlet property="startingImage" destination="ZTw-Kv-b6y" id="ABa-yc-lwp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

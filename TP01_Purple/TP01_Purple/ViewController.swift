@@ -13,11 +13,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var startingImage: UIImageView!
+    
     @IBOutlet weak var ImageOutlet: UIImageView!
     
     @IBAction func GreyActionButton(_ sender: Any) {
+        let image = startingImage.image!
+        let ciimage = CIImage(image: image)
         
+        let filter = CIFilter(name: "CIPhotoEffectMono",
+        parameters: [
+            "inputImage": ciimage!
+        ])
+        
+        let outputImage = filter?.outputImage
+        ImageOutlet.image = UIImage(ciImage: outputImage!)
     }
     @IBAction func SepiaActionButton(_ sender: Any) {
         
