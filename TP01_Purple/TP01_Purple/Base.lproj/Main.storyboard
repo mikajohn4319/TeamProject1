@@ -17,35 +17,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="HIE-ZE-x5r">
-                                <rect key="frame" x="47" y="104" width="320" height="688.5"/>
+                                <rect key="frame" x="39" y="71.5" width="336" height="753.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-Ie-GtS">
-                                        <rect key="frame" x="135" y="0.0" width="50.5" height="20.5"/>
+                                        <rect key="frame" x="143" y="0.0" width="50.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZTw-Kv-b6y">
-                                        <rect key="frame" x="20" y="54.5" width="280" height="213"/>
+                                        <rect key="frame" x="28" y="54.5" width="280" height="213"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="213" id="MVH-A3-mPf"/>
                                             <constraint firstAttribute="width" constant="280" id="swr-t9-tc9"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick your filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-F6-iUA">
-                                        <rect key="frame" x="105.5" y="301.5" width="109" height="20.5"/>
+                                        <rect key="frame" x="113.5" y="301.5" width="109" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="QyI-91-EXM">
-                                        <rect key="frame" x="20.5" y="356" width="279" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="QyI-91-EXM">
+                                        <rect key="frame" x="0.0" y="356" width="336" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYn-xe-muj">
-                                                <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="31"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="31" id="HiT-Qb-sZn"/>
-                                                    <constraint firstAttribute="width" constant="67" id="RqM-yc-9c8"/>
+                                                    <constraint firstAttribute="width" secondItem="uYn-xe-muj" secondAttribute="height" multiplier="80:31" id="5Iw-lv-2zR"/>
+                                                    <constraint firstAttribute="width" constant="80" id="I6x-ye-8Pi"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Grey"/>
@@ -54,10 +54,9 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZm-B0-0cJ">
-                                                <rect key="frame" x="106" y="0.0" width="67" height="31"/>
+                                                <rect key="frame" x="128" y="0.0" width="80" height="31"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="31" id="DN2-lZ-MBt"/>
-                                                    <constraint firstAttribute="width" constant="67" id="XvG-vF-Mf0"/>
+                                                    <constraint firstAttribute="width" constant="80" id="9Jm-wb-IaH"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Sepia"/>
@@ -65,40 +64,45 @@
                                                     <action selector="SepiaActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VyC-cN-bOE"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZI-6O-ATk">
-                                                <rect key="frame" x="212" y="0.0" width="67" height="31"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-Lj-w0N">
+                                                <rect key="frame" x="256" y="0.0" width="80" height="31"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="31" id="Hwd-da-Vd8"/>
-                                                    <constraint firstAttribute="width" constant="67" id="ZJ6-29-GUZ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="X4W-xF-WsU"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Flip"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Comic"/>
                                                 <connections>
-                                                    <action selector="FipActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8z4-BE-lav"/>
+                                                    <action selector="ComicActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5hC-Lo-EcT"/>
+                                                    <action selector="SepiaActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CwW-Lg-Sss"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="279" id="Jda-ZQ-Jp3"/>
+                                            <constraint firstAttribute="width" secondItem="QyI-91-EXM" secondAttribute="height" multiplier="336:31" id="h3E-uY-4h0"/>
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1H-5B-4vM">
-                                        <rect key="frame" x="141.5" y="421" width="37.5" height="20.5"/>
+                                        <rect key="frame" x="149.5" y="421" width="37.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOR-6m-8VY">
+                                        <rect key="frame" x="139" y="475.5" width="58" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                        <connections>
+                                            <action selector="ClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lgC-Va-yzx"/>
+                                        </connections>
+                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AVM-ez-b6r">
-                                        <rect key="frame" x="20" y="475.5" width="280" height="213"/>
+                                        <rect key="frame" x="28" y="540.5" width="280" height="213"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="213" id="S7U-or-WME"/>
                                             <constraint firstAttribute="width" constant="280" id="YUL-cg-yM3"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Wea-aL-r2g"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

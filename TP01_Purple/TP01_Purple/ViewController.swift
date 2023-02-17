@@ -30,10 +30,33 @@ class ViewController: UIViewController {
         ImageOutlet.image = UIImage(ciImage: outputImage!)
     }
     @IBAction func SepiaActionButton(_ sender: Any) {
+        let image = startingImage.image!
+        let ciimage = CIImage(image: image)
         
+        let filter = CIFilter(name: "CISepiaTone",
+        parameters: [
+            "inputImage": ciimage!
+        ])
+        
+        let outputImage = filter?.outputImage
+        ImageOutlet.image = UIImage(ciImage: outputImage!)
     }
-    @IBAction func FlipActionButton(_ sender: Any) {
+    
+    
+    @IBAction func ComicActionButton(_ sender: UIButton) {
+        let image = startingImage.image!
+        let ciimage = CIImage(image: image)
         
+        let filter = CIFilter(name: "CIComicEffect",
+        parameters: [
+            "inputImage": ciimage!
+        ])
+        
+        let outputImage = filter?.outputImage
+        ImageOutlet.image = UIImage(ciImage: outputImage!)
+    }
+    @IBAction func ClearButton(_ sender: UIButton) {
+        ImageOutlet.image = nil
     }
 }
 
