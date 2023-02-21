@@ -18,45 +18,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var ImageOutlet: UIImageView!
     
     @IBAction func GreyActionButton(_ sender: Any) {
-        let image = startingImage.image!
-        let ciimage = CIImage(image: image)
-        
-        let filter = CIFilter(name: "CIPhotoEffectMono",
-        parameters: [
-            "inputImage": ciimage!
-        ])
-        
-        let outputImage = filter?.outputImage
-        ImageOutlet.image = UIImage(ciImage: outputImage!)
-    }
-    @IBAction func SepiaActionButton(_ sender: Any) {
-        let image = startingImage.image!
-        let ciimage = CIImage(image: image)
-        
-        let filter = CIFilter(name: "CISepiaTone",
-        parameters: [
-            "inputImage": ciimage!
-        ])
-        
-        let outputImage = filter?.outputImage
-        ImageOutlet.image = UIImage(ciImage: outputImage!)
+        applyFilter(filterName: "CIPhotoEffectMono")
     }
     
+    @IBAction func SepiaActionButton(_ sender: Any) {
+        applyFilter(filterName: "CISepiaTone")
+    }
     
     @IBAction func ComicActionButton(_ sender: UIButton) {
+        applyFilter(filterName: "CIComicEffect")
+    }
+    
+    @IBAction func ClearButton(_ sender: UIButton) {
+        ImageOutlet.image = nil
+    }
+    
+    func applyFilter(filterName: String) {
         let image = startingImage.image!
         let ciimage = CIImage(image: image)
         
-        let filter = CIFilter(name: "CIComicEffect",
+        let filter = CIFilter(name: filterName,
         parameters: [
             "inputImage": ciimage!
-        ])
+        ])!
         
-        let outputImage = filter?.outputImage
+        let outputImage = filter.outputImage
         ImageOutlet.image = UIImage(ciImage: outputImage!)
-    }
-    @IBAction func ClearButton(_ sender: UIButton) {
-        ImageOutlet.image = nil
+        print("applied filter")
     }
 }
 
